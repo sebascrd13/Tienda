@@ -12,21 +12,19 @@ del body-->
     </head>
 
     <body>
-        <header id="encabezado"> <!-- etiqueta para ofrecerle al browser info de que es un encabezado -->
-            <h1>TechShop</h1>
+        <header class="header"> <!-- etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <nav class="nav"> <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo2.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">iFrame</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
         </header>
-
-        <nav id="menu"> <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
-            <a href="ejemplo9.html">Back</a>|
-            <a href="index.html">Home</a>|
-            <a href="ejemplo2.html">Next</a><br>
-        </nav>
-
-        <aside id="barraLateral"> <!-- etiqueta para indicar que es una barra lateral, puede ser a la izquierda o a la derecha y pueden ser varias-->
-            <h2>Productos más vendidos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, montes eget cubilia sociis sem congue lectus, class nisi pellentesque commodo cras aliquet. Elementum eros vivamus ultrices posuere ante nascetur laoreet tempus metus, porttitor habitant ac sem facilisi condimentum sapien penatibus, cubilia eleifend ridiculus pellentesque molestie vulputate commodo orci. Blandit phasellus nascetur porta felis fringilla ornare magnis auctor, lacus urna lacinia scelerisque quam nam justo, nisi nulla sem sagittis curae turpis metus.</p>  
-        </aside>
-
         <section id="contenido">
             <h2>Artículos principales</h2>
             <article>
@@ -37,7 +35,7 @@ del body-->
                     <img src="images/equipo1.jpg" alt="Desktop XRT" width="300"/>
                 </figure>
             </article>
-            
+
             <article>
                 <header>Alienware ATD 9000</header>
                 <p>At ridiculus rhoncus viverra neque mollis ultrices, feugiat in netus etiam sociis, hac urna scelerisque non maecenas. Congue eros nullam nisi erat litora, taciti auctor per quisque malesuada quam, magnis euismod bibendum sapien. Integer volutpat tellus dictum leo eu massa tortor, class commodo eget ullamcorper pretium iaculis, fames ad eros laoreet mollis nullam. Duis accumsan posuere nam bibendum commodo egestas placerat vestibulum, tincidunt scelerisque sapien mus sollicitudin suscipit aptent proin, convallis euismod est cubilia torquent integer odio.</p>
@@ -47,7 +45,7 @@ del body-->
                     <figcaption>Más vendido</figcaption>
                 </figure>
             </article>
-            
+
             <article>
                 <header>Impresora 3D potable</header>
                 <p>Habitant ut ligula a quam nullam aliquam at elementum cubilia pretium, nulla pellentesque odio natoque mauris vulputate litora cras dapibus neque facilisis, viverra imperdiet eu laoreet libero lacus fermentum interdum sagittis. Scelerisque quis commodo augue magnis dictum sem volutpat, suscipit potenti orci sed curabitur dictumst, viverra ante faucibus mauris habitant enim. Faucibus pellentesque ad molestie mus odio ac duis netus, facilisis augue dictumst volutpat semper curabitur habitasse potenti euismod, pulvinar egestas nam cubilia tincidunt placerat quisque.</p>
@@ -57,7 +55,7 @@ del body-->
                     <figcaption>Más económica</figcaption>
                 </figure>
             </article>
-            
+
             <article>
                 <header>Resumen de lineas generales</header>
                 <p>Habitant ut ligula a quam nullam aliquam at elementum cubilia pretium, nulla pellentesque odio natoque mauris vulputate litora cras dapibus neque facilisis, viverra imperdiet eu laoreet libero lacus fermentum interdum sagittis. Scelerisque quis commodo augue magnis dictum sem volutpat, suscipit potenti orci sed curabitur dictumst, viverra ante faucibus mauris habitant enim. Faucibus pellentesque ad molestie mus odio ac duis netus, facilisis augue dictumst volutpat semper curabitur habitasse potenti euismod, pulvinar egestas nam cubilia tincidunt placerat quisque.</p>
@@ -102,3 +100,4 @@ del body-->
         <footer id="piePagina">Derechos Reservados &COPY; 2023 <address style="display: inline">Tel 2244-8877</address></footer>
     </body>
 </html>
+
