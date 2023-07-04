@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class ProductoServiceImpl implements ProductoService{
+public class ProductoServiceImpl implements ProductoService {
     
-    //Se crea un objeto tipo Autowired que se creará autom;aticamente y solo una vez
+    //Se crea un objeto tipo Autowired que se crearà automàticamente y solo una vez
     @Autowired
     private ProductoDao productoDao;
 
@@ -25,7 +25,7 @@ public class ProductoServiceImpl implements ProductoService{
         return lista;
     }
     
-    @Override
+     @Override
     @Transactional(readOnly = true)
     public Producto getProducto(Producto producto) {
         return productoDao.findById(producto.getIdProducto()).orElse(null);
@@ -42,5 +42,5 @@ public class ProductoServiceImpl implements ProductoService{
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-        
+    
 }

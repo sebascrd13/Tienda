@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class CategoriaServiceImpl implements CategoriaService{
+public class CategoriaServiceImpl implements CategoriaService {
     
-    //Se crea un objeto tipo Autowired que se creará autom;aticamente y solo una vez
+    //Se crea un objeto tipo Autowired que se crearà automàticamente y solo una vez
     @Autowired
     private CategoriaDao categoriaDao;
 
@@ -25,7 +25,7 @@ public class CategoriaServiceImpl implements CategoriaService{
         return lista;
     }
     
-    @Override
+     @Override
     @Transactional(readOnly = true)
     public Categoria getCategoria(Categoria categoria) {
         return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
@@ -42,5 +42,5 @@ public class CategoriaServiceImpl implements CategoriaService{
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
     }
-        
+    
 }
